@@ -5,7 +5,7 @@ import ConnectDB from "./db.js"
 import dotenv from 'dotenv'
 import UsersRoute from './Routes/user.js'
 import TodoRoute from './Routes/todo.js'
-import path from 'path'
+// import path from 'path'
 
 dotenv.config()
 ConnectDB()
@@ -18,7 +18,7 @@ app.use(cors())
 app.use('/api/users',UsersRoute)
 app.use('/api/todo',TodoRoute)
 
-const __dirname= path.resolve()
+// const __dirname= path.resolve()
 
 // if (process.env.NODE_ENV === "production"){
 //     app.use(express.static(path.join(__dirname,"/frontend/build")))
